@@ -1,0 +1,18 @@
+section {
+    background-color: bisque;
+    width: 300px;
+    height: 300px;
+}
+
+#rgba {
+    background-color: rgba(231, 31, 31, 0.1);
+    width: 75%;
+    height: 75%;
+}
+
+#opacity {
+    background-color: rgb(231, 31, 31);
+    width: 75%;
+    height: 75%;
+    opacity: 0.1;
+}
