@@ -1,18 +1,61 @@
-section {
-    background-color: bisque;
-    width: 300px;
-    height: 300px;
+div {
+    width: 100px;
+    height: 100px;
+    background-color: #3d405b;
+    border: 2px solid black;
+    margin: 10px;
+    display: inline-block;
 }
 
-#rgba {
-    background-color: rgba(231, 31, 31, 0.1);
-    width: 75%;
-    height: 75%;
+#none {
+    height: 1000px;
+    background-color: white;
+
 }
 
-#opacity {
-    background-color: rgb(231, 31, 31);
-    width: 75%;
-    height: 75%;
-    opacity: 0.1;
+#middle {
+    background-color: #81b29a;
+}
+
+/* Static Property */
+#static #middle {
+    position: static;
+    top: 50px;
+}
+
+/* Relative Property */
+#relative #middle {
+    position: relative;
+    top: 50px;
+    right: 50px;
+}
+
+/* Absolute Property */
+#absolute {
+    position: relative;
+    /* comment this and see the effect */
+}
+
+#absolute #middle {
+    position: absolute;
+    top: 50px;
+}
+
+/* Fixed Property */
+#fixed #middle {
+    position: fixed;
+    left: 0px;
+    bottom: 300px;
+    /* now Scroll the page and change screen height */
+}
+
+/* Sticky Property */
+#sticky {
+    height: 1000px;
+}
+
+#sticky #middle {
+    position: sticky;
+    top: 50px;
+    /* scroll the screen, see the effect */
 }
