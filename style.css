@@ -1,61 +1,49 @@
-div {
+.circle {
+    width: 300px;
+    height: 300px;
+    background-color: magenta;
+
+    /* POV */
+    /* property name | duration | delay */
+    transition:
+        background-color 3s 3s,
+        border-radius 2s;
+
+    transition: 3s;
+    /* comment it out and see the changes */
+}
+
+.circle:hover {
+    background-color: cyan;
+    border-radius: 50%;
+}
+
+
+/* Transition Timing Function */
+section div {
     width: 100px;
     height: 100px;
-    background-color: #3d405b;
-    border: 2px solid black;
-    margin: 10px;
-    display: inline-block;
+    background-color: turquoise;
+    margin: 20px 0;
+    transition: margin-left 4s;
 }
 
-#none {
-    height: 1000px;
-    background-color: white;
-
+section:hover div {
+    margin-left: 500px;
 }
 
-#middle {
-    background-color: #81b29a;
+div:nth-of-type(1) {
+    transition-timing-function: ease-in;
 }
 
-/* Static Property */
-#static #middle {
-    position: static;
-    top: 50px;
+div:nth-of-type(2) {
+    transition-timing-function: ease-out;
 }
 
-/* Relative Property */
-#relative #middle {
-    position: relative;
-    top: 50px;
-    right: 50px;
+div:nth-of-type(3) {
+    transition-timing-function: steps(6, end);
 }
 
-/* Absolute Property */
-#absolute {
-    position: relative;
-    /* comment this and see the effect */
-}
-
-#absolute #middle {
-    position: absolute;
-    top: 50px;
-}
-
-/* Fixed Property */
-#fixed #middle {
-    position: fixed;
-    left: 0px;
-    bottom: 300px;
-    /* now Scroll the page and change screen height */
-}
-
-/* Sticky Property */
-#sticky {
-    height: 1000px;
-}
-
-#sticky #middle {
-    position: sticky;
-    top: 50px;
-    /* scroll the screen, see the effect */
+div:nth-of-type(4) {
+    transition-timing-function: cubic-bezier(0.85, 0, 0.15, 1);
 }
