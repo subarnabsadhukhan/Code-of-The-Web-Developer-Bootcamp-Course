@@ -1,0 +1,32 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+#container {
+    background-color: #003049;
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    border: 5px solid #003049;
+
+    /* POV */
+    display: flex;
+    flex-direction: row;
+    /* default */
+
+    flex-direction: row-reverse;
+
+    flex-direction: column;
+    /* height of divs are not respected */
+
+    flex-direction: column-reverse;
+}
+
+#container div {
+    width: 200px;
+    height: 200px;
+}
