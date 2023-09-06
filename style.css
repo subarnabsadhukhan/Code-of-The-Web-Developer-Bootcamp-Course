@@ -15,14 +15,21 @@ h1 {
 
     /* POV */
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-evenly;
-    flex-wrap: wrap;
-    flex-wrap: wrap-reverse;
+    align-items: flex-start;
+    align-items: flex-end;
+    align-items: center;
+
+    /* Extra POV */
+    align-items: baseline;
+    /* the bottom of each letters are in same line */
 
 }
 
 #container div {
     width: 200px;
     height: 200px;
+    text-align: center;
+    font-size: 4em;
 }
