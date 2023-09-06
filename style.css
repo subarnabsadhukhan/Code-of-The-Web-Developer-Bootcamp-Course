@@ -16,14 +16,16 @@ h1 {
     /* POV */
     display: flex;
     flex-direction: row;
-    /* default */
 
-    flex-direction: row-reverse;
+    justify-content: center;
+    /* justify-content works in same direction of flex. */
+    /* justify-content is not valid for inline-flex */
+    justify-content: end;
+    justify-content: space-around;
+    justify-content: space-between;
+    justify-content: space-evenly;
+    justify-content: start;
 
-    flex-direction: column;
-    /* height of divs are not respected */
-
-    flex-direction: column-reverse;
 }
 
 #container div {
