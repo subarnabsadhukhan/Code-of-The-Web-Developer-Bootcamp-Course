@@ -1,28 +1,21 @@
-body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: #151b29;
+section {
+    width: 80%;
+    height: 600px;
+    background-color: purple;
+    margin: 0 auto;
+
+    /* POV */
+    background-image: url(https://images.unsplash.com/photo-1682685797828-d3b2561deef4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80);
+    background-size: contain;
+    background-repeat: repeat;
+
+    background-size: cover;
+    /* comment out this and see the effect */
+
+    background-position: right;
 }
 
-button {
-    background-color: #151b29;
-    padding: 1em 2em;
-    border-color: #ffa260;
-    color: #ffa260;
-    font-size: 1em;
-    border: 2px solid;
-    font-family: 'Roboto', sans-serif;
-    transition: all 0.25s;
-}
-
-button:hover {
-    border-color: #f1ff5c;
-    color: white;
-
-    /* offset-x | offset-y | blur-radius | spread-radius | color */
-    box-shadow: 0 0.5em 0.5em -0.4em #f1ff5c;
-    transform: translateY(-0.25em);
-    cursor: pointer;
+h1 {
+    font-size: 100px;
+    color: #fff;
 }
