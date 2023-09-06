@@ -9,6 +9,8 @@ h1 {
 
 nav {
     font-size: 1.5em;
+    display: flex;
+    justify-content: space-between;
 }
 
 ul,
@@ -18,33 +20,27 @@ li {
     padding: 0;
 }
 
-
-
-@media (min-width:600px) and (max-width:800px) {
-    h1 {
-        color: red;
-    }
-
+ul {
+    display: flex;
+    max-width: 50%;
+    flex: 1;
+    justify-content: space-evenly;
 }
 
-
-
-@media (max-width:900px) {
+@media (max-width: 768px) {
     h1 {
-        font-size: larger;
+        font-size: 4em;
     }
 
-}
-
-@media (max-width:600px) {
-    h1 {
-        font-size: medium;
+    nav,
+    nav ul {
+        flex-direction: column;
+        align-items: center;
     }
-
 }
 
-@media (orientation: landscape) {
-    body {
-        background-color: aquamarine;
+@media (max-width: 576px) {
+    h1 {
+        font-size: 2.5em;
     }
 }
