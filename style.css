@@ -15,16 +15,10 @@ h1 {
 
     /* POV */
     display: flex;
-    flex-direction: row;
-
-    justify-content: center;
-    /* justify-content works in same direction of flex. */
-    /* justify-content is not valid for inline-flex */
-    justify-content: end;
-    justify-content: space-around;
-    justify-content: space-between;
+    flex-direction: column;
     justify-content: space-evenly;
-    justify-content: start;
+    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
 
 }
 
