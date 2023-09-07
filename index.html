@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="display-4">Building a NavBar from Scratch</h1>
+        <!-- As a link -->
+        <nav class="sticky-top navbar navbar-expand-lg bg-warning">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" href="#">Features</a>
+                        <a class="nav-link" href="#">Pricing</a>
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+
+
+        <hr>
+        <h1 class="h1">The Grid System</h1>
+        <div class="row">
+            <div class="col-4 bg-secondary bg-opacity-75">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Iure, possimus
+                officia omnis impedit quidem aut unde voluptatum laboriosam quam nisi labore sint. Consectetur rerum
+                impedit, tenetur iste maiores saepe! Id.
+            </div>
+            <div class="col-6 bg-warning">Lorem ipsum dolor sit amet consectetur.
+            </div>
+            <div class="col-2 bg-info">Lorem ipsum dolor sit amet consectetur.
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-4 bg-primary bg-opacity-75">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Iure, possimus
+                officia omnis impedit quidem aut unde voluptatum laboriosam quam nisi labore sint. Consectetur rerum
+                impedit, tenetur iste maiores saepe! Id.
+            </div>
+            <div class="col-6 bg-secondary bg-opacity-75">Lorem ipsum dolor sit amet consectetur.
+
+            </div>
+            <div class="col-2 bg-info">Lorem ipsum dolor sit amet consectetur. lorem15 Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. Inventore temporibus corporis labore officiis neque suscipit!
+            </div>
+        </div>
+        <h2 class="h2">Bootstrap Grid Practice</h2>
+        <div class="row">
+            <div class="col-4 bg-danger">One Third</div>
+            <div class="col-8 bg-info">Two Third</div>
+        </div>
+        <div class="row">
+            <div class="col-3 bg-warning">One Quarter</div>
+            <div class="col-6 bg-primary">One Half</div>
+            <div class="col-3 bg-warning">One Quarter</div>
+        </div>
+        <hr>
+    </div>
+    <div class="container">
+        <h2 class="display-4">Responsive Grid</h2>
+        <div class="row">
+            <div class="col-md-6 col-xl-3 bg-danger bg-opacity-75">Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit.
+                Alias blanditiis quod</div>
+            <div class="col-md-6 col-xl-3 bg-warning bg-opacity-75">Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit. In,
+                voluptatum expedita?</div>
+            <div class="col-md-6 col-xl-3 bg-info bg-opacity-75">Lorem ipsum dolor sit amet.</div>
+            <div class="col-md-6 col-xl-3 bg-secondary bg-opacity-75">Lorem Lorem ipsum dolor, sit amet consectetur
+                adipisicing
+                elit. Inventore, qui amet. ipsum dolor sit amet.</div>
+        </div>
+        <hr>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4"><img
+                    src="https://images.unsplash.com/photo-1493236296276-d17357e28888?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&h=400&q=80"
+                    class="img-fluid" alt=""></div>
+            <div class="col-md-4"><img
+                    src="https://plus.unsplash.com/premium_photo-1691784963883-1a481f97dc5a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGJpcmRzfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&h=400&q=60"
+                    class="img-fluid" alt=""></div>
+            <div class="col-md-4"><img
+                    src="https://images.unsplash.com/photo-1486365227551-f3f90034a57c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGJpcmRzfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&h=400&q=60"
+                    alt="" class="img-fluid"></div>
+        </div>
+        <hr>
+        <h1 class="display-4">My Nav Bar</h1>
+        <div class="row justify-content-between text-center p-2 align-items-center bg-primary bg-opacity-75">
+            <div class="col-6">
+                <div class="row justify-content-start">
+                    <div class="col-2 text-white">Home</div>
+                    <div class="col-2 text-white">About</div>
+                    <div class="col-2 text-white">Blog</div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="row justify-content-around">
+                    <button class="btn btn-primary col-4">Sign In</button>
+                    <button class="btn btn-primary col-4">Sign Up</button>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <select class="form-select" aria-label="Default select example">
+            <option selected>Open this select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+        </select>
+        <div class="form-group">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Default checkbox
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                    Checked checkbox
+                </label>
+            </div>
+        </div>
+        <hr>
+    </div>
+
+
+    <!-- Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
