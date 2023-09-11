@@ -1,5 +1,5 @@
 body {
-    margin: 0 0.5rem;
+
     background-color: #f5d9d5;
     font-family: 'Nunito', sans-serif;
 }
@@ -21,4 +21,19 @@ body {
 
 #mainNavbar .nav-link:hover {
     color: #ea1c2c;
+}
+
+#headingGroup span {
+    color: #ea1c2c;
+}
+
+#headingGroup h2 {
+    font-size: 3.5rem;
+    font-weight: 100;
+}
+
+@media (max-width: 1200px) {
+    #headingGroup h2 {
+        font-size: 3rem;
+    }
 }
