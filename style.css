@@ -32,8 +32,42 @@ body {
     font-weight: 100;
 }
 
+.content h1 {
+    font-size: 2.5rem;
+    color: #ea1c2c;
+}
+
+.content p {
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+    color: #ea1c2c;
+}
+
+/* Media Query */
 @media (max-width: 1200px) {
     #headingGroup h2 {
         font-size: 3rem;
     }
+
+    .content h1 {
+        font-size: 2rem;
+    }
+
+    .content p {
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+}
+
+@media (max-width:992px) {
+    #mainNavbar {
+        background-color: #c2ebf9c2;
+    }
+}
+
+@media (min-width:993px) {
+    #mainNavbar .navbar-nav {
+        background-color: rgba(245, 217, 213, 0.63);
+    }
+
 }
